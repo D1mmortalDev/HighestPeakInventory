@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name"> Highest Peak Inventory</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="et_prod_name">Product Name</string>
+    <string name="et_prod_desc">Product Description</string>
+    <string name="et_quantity">Quantity</string>
+    <string name="et_price">Price</string>
+    <string name="et_category">Category ID</string>
+    <string name="et_reg_name">Enter your full name</string>
+    <string name="et_reg_email">Enter your email</string>
+    <string name="et_reg_pass_one">Create password</string>
+    <string name="et_reg_pass_two">Password should match</string>
+    <string name="et_reg_num">Enter mobile number</string>
+    <string name="et_reg_btn">Create Account</string>
+    <string name="et_reg_display">Registration</string>
+    <string name="et_log_display">Log In</string>
+    <string name="et_log_username">Email</string>
+    <string name="et_log_password">Password</string>
+    <string name="et_btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="categ_name">Category Name</string>
+    <string name="categ_per_product">Product Per Category</string>
+    <string name="bottom_nav_item_1">Categories</string>
+    <string name="bottom_nav_item_2">All Products</string>
+    <string name="about_one">Application</string>
+    <string name="about_description">Highest Peak is an inventory app created to utilize hiking and camping products.</string>
+    <string name="about_dev">Developer</string>
+    <string name="about_dev_desc">Bernadette de Jesus developed this application to enhance her skills and showcase her understanding of SQLite integration.</string>
+</resources>

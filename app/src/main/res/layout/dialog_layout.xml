@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <EditText
+        android:id="@+id/etDProdName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom2_layout"
+        android:hint="@string/et_prod_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDProdDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom2_layout"
+        android:hint="@string/et_prod_desc"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etDProdName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDProdName"
+        app:layout_constraintTop_toBottomOf="@+id/etDProdName" />
+
+    <EditText
+        android:id="@+id/etDPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom2_layout"
+        android:ems="10"
+        android:hint="@string/et_price"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etDProdDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDProdDesc"
+        app:layout_constraintTop_toBottomOf="@+id/etDProdDesc" />
+
+    <EditText
+        android:id="@+id/etDQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom2_layout"
+        android:ems="10"
+        android:hint="@string/et_quantity"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etDPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDPrice"
+        app:layout_constraintTop_toBottomOf="@+id/etDPrice"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/etDCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom2_layout"
+        android:ems="10"
+        android:hint="@string/et_category"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etDQuantity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/etDQuantity"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

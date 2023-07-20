@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    tools:context=".Screens.Login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_layout"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edLog"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_layout"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/et_log_username"
+                android:minHeight="48dp"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtDisplayLog"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtDisplayLog"
+                app:layout_constraintTop_toBottomOf="@+id/txtDisplayLog" />
+
+            <TextView
+                android:id="@+id/txtDisplayLog"
+                android:layout_width="152dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/et_log_display"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/classy_black"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="10dp"
+                android:text="@string/et_btn_login"
+                android:textAllCaps="true"
+                app:icon="@drawable/baseline_login_24"
+                app:iconGravity="end"
+                app:layout_constraintEnd_toEndOf="@+id/edPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edPassword"
+                app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/classy_black"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="10dp"
+                android:text="@string/btn_register"
+                android:textAllCaps="true"
+                app:icon="@drawable/baseline_person_24"
+                app:iconGravity="end"
+                app:layout_constraintEnd_toEndOf="@+id/btnlogin"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnlogin"
+                app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_layout"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/et_log_password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/edLog"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edLog"
+                app:layout_constraintTop_toBottomOf="@+id/edLog" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
